@@ -45,6 +45,16 @@ a { color: inherit; text-decoration: none; }
   font-family: var(--font-display), Georgia, serif;
   font-size: 1.7rem;
   letter-spacing: -0.03em;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+.brand img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--line);
 }
 .brand em { font-style: italic; color: var(--vermillion); }
 .nav { display: flex; gap: 1.15rem; color: var(--muted); font-size: 0.92rem; }

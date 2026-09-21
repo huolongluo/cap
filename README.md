@@ -2,7 +2,7 @@
 
 **The agent can call. It cannot exceed the cap.**
 
-[Crypto World's Fair](https://colosseum.com/worldsfair) · **Solana** + **Hyperliquid** · [github.com/huolongluo/cap](https://github.com/huolongluo/cap)
+[Crypto World's Fair](https://colosseum.com/worldsfair) · **Solana** + **Hyperliquid** · [github.com/huolongluo/cap](https://github.com/huolongluo/cap) · Live: [huolongluo.github.io/cap](https://huolongluo.github.io/cap/)
 
 Priya Raman is Head of Ops at Harbor Labs. Scout needs Hyperliquid marks before Tokyo open. Kestrel-style vendor accounts leak. Forty-one on-chain payments break. Priya opens an **$8 USDC** channel on Solana’s payment-channels program. Scout meters 50-byte Ed25519 vouchers. The L2 book would exceed the cap — **DENY**. One `settle_and_seal`. Unused dollars return. Replay pays nothing.
 
@@ -56,7 +56,7 @@ npm test
 npm run dev
 ```
 
-Open [http://127.0.0.1:3142/desk?play=1](http://127.0.0.1:3142/desk?play=1)
+Open [http://127.0.0.1:3142/desk?play=1](http://127.0.0.1:3142/desk?play=1) or the public desk [huolongluo.github.io/cap/desk/?play=1](https://huolongluo.github.io/cap/desk/?play=1).
 
 1. File the overnight job. Stamp **HOLD**.
 2. Pay with a screenshot. Stamp **NO**.

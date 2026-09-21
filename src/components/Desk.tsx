@@ -1,7 +1,9 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useSearchParams } from "next/navigation";
+import { applyAction, healthView } from "@/lib/run";
+import type { Engine } from "@/lib/types";
 
 type Beat = { id: string; kind: string; title: string; detail: string };
 type Packet = { sku: string; price: string; body: string; cumulative: string };
@@ -55,35 +57,23 @@ function usd(raw: string | undefined) {
 export function Desk() {
   const params = useSearchParams();
   const autoplay = params.get("play") === "1";
-  const [health, setHealth] = useState<Health | null>(null);
+  const engine = useRef<Engine | null>(null);
+  const [health] = useState<Health>(() => healthView());
   const [file, setFile] = useState<FileState | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [busy, setBusy] = useState(false);
 
-  useEffect(() => {
-    fetch("/api/health")
-      .then((r) => r.json())
-      .then(setHealth)
-      .catch(() => setHealth(null));
-  }, []);
-
-  async function call(action: string, id?: string): Promise<FileState> {
-    const res = await fetch("/api/run", {
-      method: "POST",
-      headers: { "content-type": "application/json" },
-      body: JSON.stringify({ action, id }),
-    });
-    const body = await res.json();
-    if (!res.ok) throw new Error(body.error || "run failed");
-    return body as FileState;
+  async function call(action: string): Promise<FileState> {
+    const next = await applyAction(engine.current, action);
+    engine.current = next.engine;
+    return next.view;
   }
 
   async function act(action: string) {
     setBusy(true);
     setError(null);
     try {
-      const next = await call(action, file?.id);
-      setFile(next);
+      setFile(await call(action));
     } catch (err) {
       setError(err instanceof Error ? err.message : String(err));
     } finally {
@@ -98,12 +88,10 @@ export function Desk() {
       try {
         setBusy(true);
         const steps = ["start", "fake", "open", "meter", "over", "settle", "replay"] as const;
-        let current: FileState | undefined;
         for (const step of steps) {
-          const next = await call(step, current?.id);
+          const next = await call(step);
           if (!alive) return;
           setFile(next);
-          current = next;
           await new Promise((r) => setTimeout(r, 1100));
           if (!alive) return;
         }
@@ -182,9 +170,9 @@ export function Desk() {
         </div>
         {error ? <p className="err">{error}</p> : null}
         <div className="health">
-          <span className="pill">{health?.replay ? "replay" : "live mids"}</span>
-          <span className="pill">program {health?.program?.slice(0, 8) || "CHNLxYvV"}…</span>
-          {health?.channel ? <span className="pill">PDA {health.channel.slice(0, 8)}…</span> : null}
+          <span className="pill">{health.replay ? "replay" : "live mids"}</span>
+          <span className="pill">program {health.program.slice(0, 8)}…</span>
+          <span className="pill">PDA {health.channel.slice(0, 8)}…</span>
         </div>
       </div>
       <aside className="card">

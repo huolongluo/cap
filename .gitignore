@@ -10,3 +10,5 @@ docs/*.webm
 docs/page@*.webm
 AGENTS.md
 CLAUDE.md
+.api-hidden
+out

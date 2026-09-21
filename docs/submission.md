@@ -56,8 +56,11 @@ None. Cap was started in `hackathon/cap` for this competition. We compose with t
 ## Links to keep public
 
 - Repo: [github.com/huolongluo/cap](https://github.com/huolongluo/cap) (public)
-- Live desk: local `http://127.0.0.1:3142/desk?play=1` until deployed
+- Live desk: [huolongluo.github.io/cap/desk/?play=1](https://huolongluo.github.io/cap/desk/?play=1)
+- Pitch: [huolongluo.github.io/cap/pitch/?play=1](https://huolongluo.github.io/cap/pitch/?play=1)
 - Opening page: `/open`
+- Logo: `/logo.png`
+- Videos: `docs/pitch.webm`, `docs/demo.webm`, `docs/weekly.webm`
 
 ## Weekly update (optional, do it)
 
