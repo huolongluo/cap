@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 420" role="img" aria-label="Cap architecture">
+  <rect width="920" height="420" fill="#f3ead6"/>
+  <text x="40" y="42" font-family="Georgia, serif" font-size="22" fill="#1c1712">Cap  one deposit, off-chain vouchers, one settlement</text>
+  <text x="40" y="68" font-family="ui-monospace, monospace" font-size="12" fill="#6d6458">payment-channels CHNLxYvVA28MJP9PrFuDXccuoGXAx7jBacfLEkahyGsX · Hyperliquid allMids</text>
+
+  <rect x="40" y="100" width="180" height="88" rx="14" fill="#fff8ea" stroke="#1c1712" stroke-opacity="0.15"/>
+  <text x="56" y="136" font-family="Georgia, serif" font-size="16" fill="#1c1712">Priya</text>
+  <text x="56" y="158" font-family="ui-sans-serif, sans-serif" font-size="12" fill="#6d6458">open · settle_and_seal</text>
+  <text x="56" y="176" font-family="ui-sans-serif, sans-serif" font-size="12" fill="#6d6458">holds the $8 cap</text>
+
+  <rect x="260" y="100" width="180" height="88" rx="14" fill="#fff8ea" stroke="#1c1712" stroke-opacity="0.15"/>
+  <text x="276" y="136" font-family="Georgia, serif" font-size="16" fill="#1c1712">Scout</text>
+  <text x="276" y="158" font-family="ui-sans-serif, sans-serif" font-size="12" fill="#6d6458">presents vouchers</text>
+  <text x="276" y="176" font-family="ui-sans-serif, sans-serif" font-size="12" fill="#c23b22">cannot open or settle</text>
+
+  <rect x="480" y="100" width="180" height="88" rx="14" fill="#fff8ea" stroke="#1c1712" stroke-opacity="0.15"/>
+  <text x="496" y="136" font-family="Georgia, serif" font-size="16" fill="#1c1712">Kite /intel</text>
+  <text x="496" y="158" font-family="ui-sans-serif, sans-serif" font-size="12" fill="#6d6458">402 without channel</text>
+  <text x="496" y="176" font-family="ui-sans-serif, sans-serif" font-size="12" fill="#6d6458">merchant watermark</text>
+
+  <rect x="700" y="100" width="180" height="88" rx="14" fill="#1f2a44"/>
+  <text x="716" y="136" font-family="Georgia, serif" font-size="16" fill="#fff8ea">Hyperliquid</text>
+  <text x="716" y="158" font-family="ui-sans-serif, sans-serif" font-size="12" fill="#d7a85a">BTC · ETH · SOL mids</text>
+  <text x="716" y="176" font-family="ui-sans-serif, sans-serif" font-size="12" fill="#d7a85a">the goods, not a sticker</text>
+
+  <rect x="40" y="228" width="840" height="150" rx="16" fill="#fff8ea" stroke="#1c1712" stroke-opacity="0.15"/>
+  <text x="60" y="264" font-family="Georgia, serif" font-size="16" fill="#1c1712">Solana payment channel PDA</text>
+  <text x="60" y="290" font-family="ui-monospace, monospace" font-size="12" fill="#6d6458">seeds = channel + payer + payee + mint + authorized_signer + salt + open_slot</text>
+  <text x="60" y="318" font-family="ui-sans-serif, sans-serif" font-size="13" fill="#1c1712">50-byte voucher: 0x56 0x01 · channel_id · cumulative u64 LE · expires_at i64 LE</text>
+  <text x="60" y="344" font-family="ui-sans-serif, sans-serif" font-size="13" fill="#1c1712">settle_and_seal ’ distribute · Kite gets settled · Priya gets deposit  settled</text>
+  <text x="60" y="368" font-family="ui-sans-serif, sans-serif" font-size="13" fill="#c23b22">Replay: cumulative_amount is not strictly greater than the watermark.</text>
+</svg>
