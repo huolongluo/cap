@@ -1,0 +1,14 @@
+node_modules
+.next
+.env
+.env.local
+.DS_Store
+playwright-report
+test-results
+*.log
+docs/*.webm
+docs/page@*.webm
+AGENTS.md
+CLAUDE.md
+.api-hidden
+out
