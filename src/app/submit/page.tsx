@@ -18,9 +18,18 @@ const ONE_LINER =
 const DESCRIPTION =
   "Harbor Labs opens an $8 USDC payment channel on Solana. Scout, an overnight agent, buys Hyperliquid mark packets as 50-byte Ed25519 vouchers. It cannot open, settle, or exceed the cap. Unused USDC returns when Priya seals the channel. Replay of the same voucher pays nothing.";
 const GTM =
-  "Beachhead: crypto research desks already paying for marks and LLM briefs. Charge 50 bps on distribute, plus $99/mo for the cap desk. Compose with pay-kit so any 402 route sits behind a human-held ceiling.";
+  "Beachhead: crypto research desks already paying for marks and LLM briefs. $8 is the demo ceiling, not ACV. Charge $99/mo for the desk (who may open and settle), plus 50 bps on distribute when production channels are $500–$5,000. Compose with pay-kit so any 402 route sits behind a human-held ceiling. Zero paying users this week — public desk is the proof.";
+const BUYER =
+  "Head of Ops at a crypto research desk. They already pay for Hyperliquid marks and LLM briefs. They will not give an overnight agent a vendor API key, and they will not sign a chain tx per packet.";
+const PRICING =
+  "Seat $99/mo is the first invoice. 50 bps on distribute is the scale line. Demo channel $8 (cents of take). Production $500–$5,000. At $10k/mo agent spend: ~$50 take + $99 seat.";
+const TRACTION =
+  "Zero revenue. Zero LOIs. Public replay at /desk?play=1, public GitHub, npm test with no keys, weekly one-minute videos. No token. No extra chain.";
+const PLAN30 =
+  "Three conversations with desks that already buy marks. Keep Scout out of open and settle. Compose with pay-kit. Ship the weekly video. Ask for the accelerator interview.";
 const DISCLOSE = "None. Started for Crypto World's Fair after 14 September 2026.";
 const TRACKS = "Solana, Hyperliquid";
+const COMPANY = "https://huolongluo.github.io/cap/business/";
 
 export default function SubmitPage() {
   return (
@@ -47,7 +56,12 @@ export default function SubmitPage() {
         <CopyBlock label="Demo video" value={LINKS.demo} />
         <CopyBlock label="Weekly video" value={LINKS.weekly} />
         <CopyBlock label="Logo" value={LINKS.logo} />
+        <CopyBlock label="Company page" value={COMPANY} />
+        <CopyBlock label="Buyer" value={BUYER} />
+        <CopyBlock label="Pricing" value={PRICING} />
         <CopyBlock label="Go-to-market" value={GTM} />
+        <CopyBlock label="Traction (true)" value={TRACTION} />
+        <CopyBlock label="Next 30 days" value={PLAN30} />
         <CopyBlock label="Prior development" value={DISCLOSE} />
       </section>
 

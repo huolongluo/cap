@@ -27,8 +27,8 @@ const SLIDES = [
   },
   {
     kicker: "The business",
-    title: "50 bps on distribute. $99 desk for anyone who lets models spend.",
-    body: "Beachhead: crypto research desks. Distribution: sit in front of pay-kit. The control is TypeScript, not a prompt.",
+    title: "$99 desk is the invoice. 50 bps is the scale. $8 is the demo.",
+    body: "Buyer: Ops at a desk already paying for marks. Seat first. Take rate when production channels are $500–$5,000. Zero paying users this week. Public replay is the proof.",
   },
   {
     kicker: "The ask",

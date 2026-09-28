@@ -28,7 +28,7 @@ Tracks to select (max 3): **Solana**, **Hyperliquid**.
 2. Problem: agents either get a vendor API key with no ceiling, or they pay on-chain per call and stall.
 3. Insight: Solana payment channels escrow a ceiling. Usage is a voucher. Settlement is one transaction.
 4. Demo: `/desk?play=1` — HOLD, NO, OPEN, METER, DENY, SETTLED, replay.
-5. Market: every company that lets models spend. 50 bps on distribute. $99 desk.
+5. Market: $8 is the demo. $99 desk is the invoice. 50 bps at production channel size. Zero paying users — public replay is the proof.
 6. Ask: Solana track + general awards. We want the accelerator interview.
 
 ## Demo video beats (≤ 3 min, technical)
@@ -46,8 +46,10 @@ Keep this a run, not a second pitch.
 ## Go-to-market
 
 - Beachhead: crypto research desks already paying for marks and LLM briefs.
+- $8 is the demo ceiling, not ACV. Seat $99/mo is the first invoice. 50 bps on `distribute` is the scale line when production channels are $500–$5,000.
 - Distribution: compose with pay-kit / pay.sh so any 402 route can sit behind a Cap desk.
-- Proof: public replay at `/desk?play=1`, open GitHub, weekly 1-minute update videos.
+- Traction: zero paying users. Public replay at `/desk?play=1`, open GitHub, weekly 1-minute videos.
+- Company page: [huolongluo.github.io/cap/business](https://huolongluo.github.io/cap/business/)
 
 ## Prior development disclosure
 
@@ -64,6 +66,7 @@ None. Cap was started in `hackathon/cap` for this competition. We compose with t
 - Weekly: [huolongluo.github.io/cap/weekly.mp4](https://huolongluo.github.io/cap/weekly.mp4)
 - Logo: [huolongluo.github.io/cap/logo.png](https://huolongluo.github.io/cap/logo.png)
 - Portal paste page: [huolongluo.github.io/cap/submit](https://huolongluo.github.io/cap/submit/)
+- Company: [huolongluo.github.io/cap/business](https://huolongluo.github.io/cap/business/)
 
 ## Weekly update (optional, do it)
 

@@ -18,7 +18,10 @@ export default function HomePage() {
         <Link className="btn ghost" href="/how">
           How the cap holds
         </Link>
-        <Link className="btn sea" href="/submit">
+        <Link className="btn sea" href="/business">
+          Company
+        </Link>
+        <Link className="btn ghost" href="/submit">
           Submission pack
         </Link>
       </div>

@@ -21,7 +21,7 @@ Colosseum scores this as a seed round: functionality, impact, novelty, UX, open-
 | Novelty | Compose with the new primitive. Do not wrap x402 again. The product is the cap, not another 402 middleware. |
 | UX | A ticket desk. HOLD → OPEN → METER → DENY → SETTLED. Scout never clicks settle. |
 | Open-source | Same program, same voucher, same FSM as [solana-foundation/payment-channels](https://github.com/solana-foundation/payment-channels). Hyperliquid `allMids` is the SKU. |
-| Business | Take 50 bps on `distribute`. Sell the desk to anyone who lets agents hit paid APIs. |
+| Business | $99 desk is the invoice. 50 bps on `distribute` at production size. $8 is the demo. Zero paying users — public desk is the proof. |
 
 The wow is the **HOLD** stamp on a 402, the **DENY** stamp on `hl.book`, then **SETTLED** with a refund, then a replay that pays nothing.
 
@@ -94,11 +94,15 @@ Voucher length and magic, wrong signer, over-cap, non-monotonic replay, `settle_
 
 ## Business
 
-**Who pays:** any firm that lets agents hit paid APIs — research desks, LLM inference, market data.
+Judges score this as a seed round. Company page: [huolongluo.github.io/cap/business](https://huolongluo.github.io/cap/business/).
+
+**Who pays:** Head of Ops at a crypto research desk already buying Hyperliquid marks and LLM briefs. Then any firm that lets agents hit paid APIs.
 
 **Why now:** payment channels made per-call settlement obsolete; x402 still trains teams to pay once per request.
 
-**How we charge:** 50 bps on `distribute`, plus a $99/mo desk for the cap UI and policy.
+**How we charge:** $99/mo desk is the first invoice (who may `open` / `settle_and_seal`). 50 bps on `distribute` is the scale line. The $8 Harbor Labs channel is the demo SKU, not ACV. Production desks open $500–$5,000.
+
+**Traction:** none. Public desk, public repo, `npm test` with no keys. No token.
 
 **Why us:** the control is TypeScript. The model is not in the settlement path.
 
