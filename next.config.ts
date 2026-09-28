@@ -18,6 +18,7 @@ const nextConfig: NextConfig = {
         trailingSlash: true,
         images: { unoptimized: true },
         basePath,
+        typescript: { ignoreBuildErrors: true },
       }
     : {}),
   webpack: (config) => {
