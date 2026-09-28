@@ -18,6 +18,9 @@ export default function HomePage() {
         <Link className="btn ghost" href="/how">
           How the cap holds
         </Link>
+        <Link className="btn sea" href="/submit">
+          Submission pack
+        </Link>
       </div>
       <section className="grid three">
         <article className="card">

@@ -59,8 +59,11 @@ None. Cap was started in `hackathon/cap` for this competition. We compose with t
 - Live desk: [huolongluo.github.io/cap/desk/?play=1](https://huolongluo.github.io/cap/desk/?play=1)
 - Pitch: [huolongluo.github.io/cap/pitch/?play=1](https://huolongluo.github.io/cap/pitch/?play=1)
 - Opening page: `/open`
-- Logo: `/logo.png`
-- Videos: `docs/pitch.webm`, `docs/demo.webm`, `docs/weekly.webm`
+- Pitch video: [huolongluo.github.io/cap/pitch.mp4](https://huolongluo.github.io/cap/pitch.mp4)
+- Demo video: [huolongluo.github.io/cap/demo.mp4](https://huolongluo.github.io/cap/demo.mp4)
+- Weekly: [huolongluo.github.io/cap/weekly.mp4](https://huolongluo.github.io/cap/weekly.mp4)
+- Logo: [huolongluo.github.io/cap/logo.png](https://huolongluo.github.io/cap/logo.png)
+- Portal paste page: [huolongluo.github.io/cap/submit](https://huolongluo.github.io/cap/submit/)
 
 ## Weekly update (optional, do it)
 

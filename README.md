@@ -2,7 +2,9 @@
 
 **The agent can call. It cannot exceed the cap.**
 
-[Crypto World's Fair](https://colosseum.com/worldsfair) · **Solana** + **Hyperliquid** · [github.com/huolongluo/cap](https://github.com/huolongluo/cap) · Live: [huolongluo.github.io/cap](https://huolongluo.github.io/cap/)
+[Crypto World's Fair](https://colosseum.com/worldsfair) · **Solana** + **Hyperliquid** · [github.com/huolongluo/cap](https://github.com/huolongluo/cap) · Live: [huolongluo.github.io/cap](https://huolongluo.github.io/cap/) · Portal pack: [submit](https://huolongluo.github.io/cap/submit/)
+
+Pitch: [pitch.mp4](https://huolongluo.github.io/cap/pitch.mp4) · Demo: [demo.mp4](https://huolongluo.github.io/cap/demo.mp4) · Weekly: [weekly.mp4](https://huolongluo.github.io/cap/weekly.mp4) · Logo: [logo.png](https://huolongluo.github.io/cap/logo.png)
 
 Priya Raman is Head of Ops at Harbor Labs. Scout needs Hyperliquid marks before Tokyo open. Kestrel-style vendor accounts leak. Forty-one on-chain payments break. Priya opens an **$8 USDC** channel on Solana’s payment-channels program. Scout meters 50-byte Ed25519 vouchers. The L2 book would exceed the cap — **DENY**. One `settle_and_seal`. Unused dollars return. Replay pays nothing.
 
